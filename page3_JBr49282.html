@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project Page 3</title>
+        <meta name="author" content="Jack Braun">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/styles_JBr49282.css" rel="stylesheet">
+        <link href="css/nav_JBr49282.css" rel="stylesheet">
+        <script src="script/events_JBr49282.js"></script>
+        <script src="script/formValidation_JBr49282.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <span>Fast Travel Booker</span>
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home Page</a>
+                </li>
+                <li>
+                    <a href="page2_JBr49282.html">Country Viewer</a>
+                </li>
+                <li>
+                    <a href="page3_JBr49282.html">Hotel Cost Calculator</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>Hotel Cost Calculator</h1>
+        <form method="get" action="" enctype="application/x-www-form-urlencoded" id="my_form">
+            <fieldset>
+                <legend>Select your options to estimate the price</legend>
+                <div>
+                    <label for="hotel_rating">Hotel Rating</label>
+                    <input type="number" name="hotel_rating" id="hotel_rating" min="1" max="5" placeholder="1 to 5 stars" required>
+                </div>
+                <span>
+                    <label for="num_of_beds">Choose number of beds</label>
+                    <input type="radio" name="num_of_beds" id="num_of_beds1" required>
+                    <label for="num_of_beds">One bed</label>
+                    <input type="radio" name="num_of_beds" id="num_of_beds2" required>
+                    <label for="num_of_beds">Two beds</label>
+                    <input type="radio" name="num_of_beds" id="num_of_beds3" required>
+                    <label for="num_of_beds">Three beds</label>
+                    <input type="radio" name="num_of_beds" id="num_of_beds4" required>
+                    <label for="num_of_beds">Four beds</label>
+                </span>
+                <div>
+                    <label for="location">Location</label>
+                    <select name="location" id="location" size="3" required>
+                        <option disabled selected>select an option</option>
+                        <option value="usa">United States of America</option>
+                        <option value="fra">France</option>
+                        <option value="can">Canada</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="stay_length">Duration of Stay</label>
+                    <input type="range" name="stay_length" id="stay_length" min="1" max="7">
+                </div>
+                <!--decided to create a JS function to put whatever option was selected at any given time and place it below in a text area-->
+                <div>
+                    <p id="days_target">move slider to select number of days</p>
+                </div>
+            </fieldset>
+            <div id="submit_id">
+                <input type="button" id="submit_button" value="Calculate Cost">
+            </div>
+        </form>
+            <div>
+                <p id="cost_target"></p>
+            </div>
+            <footer>
+                <hr>
+                &copy; Jack Braun
+            </footer>
+    </body>
+</html>

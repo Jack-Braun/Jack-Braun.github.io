@@ -1,0 +1,113 @@
+/* global */
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color:lightseagreen;
+}
+body{
+    width: 75%;
+    margin: auto;
+    background-color: aqua;
+    padding: 10px;
+}
+header{
+    padding: 10px;
+    background-image: url("../images/charlotte-noelle-98WPMlTl5xo-unsplash.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    height: 250px;
+    
+}
+h1{
+    padding: 3px;
+    position: relative;
+    top: 35%;
+    text-align: center;
+    color:black;
+}
+h1 > span{
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px ;
+    background-color:cyan;
+}
+/* page 1 */
+#reviews{
+    display: flex;
+    flex-flow: row wrap;
+}
+#review{
+    flex: 1 1 400px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    display: flex;
+    
+}
+#reviewer_photo{
+    width: 100px;
+    border: 1px solid black;
+}
+#reviewer_text{
+    margin: 10px;
+    flex: 1 1 400px;
+}
+#star{
+    max-width: 150px;
+    font-size: smaller;
+    flex: 1 1 150px;
+    margin: 10px;
+}
+/* page 2 */
+#video{
+    margin: 5px;
+    padding: 5px;
+}
+#country_desc{
+    text-align: center;
+}
+/* page 3 */
+fieldset{
+    margin: 10px;
+    border-radius: 5px;
+}
+legend{
+    background-color:aquamarine;
+    border-radius: 15px;
+    padding: 5px;
+}
+fieldset > div{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px;
+    padding: 5px;
+}
+fieldset > div > *{
+    flex: 1 1 200px;
+}
+fieldset > span{
+    align-items: flex-start;
+    display:flex;
+    flex-flow: row; 
+}
+fieldset > span > *{
+    padding: 5px;
+    margin: 5px;
+    flex:auto;
+}
+#days_target{
+text-align: right;
+}
+#submit_id{
+    text-align: center;
+}
+input[type="button"]{
+    background-color:darkblue;
+    color: white;
+    width: 50%;
+}
+#cost_target{
+    text-align: right;
+    font-size: xx-large;
+}

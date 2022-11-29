@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project Page 2</title>
+        <meta name="author" content="Jack Braun">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/styles_JBr49282.css" rel="stylesheet">
+        <link href="css/nav_JBr49282.css" rel="stylesheet">
+        <script src="script/videoSelect_JBr49282.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>
+                <span>Fast Travel Booker</span>
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home Page</a>
+                </li>
+                <li>
+                    <a href="page2_JBr49282.html">Country Viewer</a>
+                </li>
+                <li>
+                    <a href="page3_JBr49282.html">Hotel Cost Calculator</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>Country Viewer</h1>
+        <div id="video">
+            <label for="video_select">Choose a country you would like to view</label>                                        
+            <select name="video_select" id="video_select">
+                <option value="" id="video0" disabled selected>Please select a country</option>
+                <option value="https://www.youtube.com/embed/biC7sU89rTE" id="video1" required>USA</option>
+                <option value="https://www.youtube.com/embed/e2wm_VRROvA" id="video2" reqruired>France</option>
+                <option value="https://www.youtube.com/embed/V8s9EkYsTSc" id="video3" required>Canada</option>
+            </select>
+        </div>
+        <div>                    
+            <iframe id ="video_target" height="400px" width="100%" src="" allowfullscreen></iframe>
+            <p id="country_desc"></p>
+        </div>
+        <footer>
+            <hr>
+            &copy; Jack Braun
+        </footer>
+    </body>
+</html> 
